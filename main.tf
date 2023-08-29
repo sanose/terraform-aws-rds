@@ -66,8 +66,6 @@ resource "aws_db_parameter_group" "education" {
   }
 }
 
-provider "random" {}
-
 resource "random_pet" "random" {
   length = 1
 }
