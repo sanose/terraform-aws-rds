@@ -1,5 +1,13 @@
+terraform {
+  required_providers {
+    random = {
+      source  = "hashicorp/random"
+    }
+  }
+}
+
 provider "aws" {
-  region = "us-east-2"
+  region = "ap-southeast-2"
 }
 
 data "aws_availability_zones" "available" {}
