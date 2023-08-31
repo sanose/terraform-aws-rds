@@ -13,3 +13,8 @@ output "rds_username" {
   value       = aws_db_instance.education.username
 }
 
+output "rds_dbname" {
+  description = "RDS instance db name"
+  value       = aws_db_instance.education.db_name
+}
+
